@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Cancer Awareness & Support</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <img src="banner.jpg" alt="Cancer awareness banner" class="banner">
+    <div class="hero-text">
+      <h1>Cancer Awareness & Support</h1>
+      <p>Learn, support survivors, and donate to help research and care.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about">
+      <h2>About</h2>
+      <p>Short paragraph about awareness, early detection, and support resources.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form id="contactForm" onsubmit="handleSubmit(event)">
+        <label>
+          Name
+          <input type="text" name="name" id="name" required />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" id="email" required />
+        </label>
+        <label>
+          Message
+          <textarea name="message" id="message" rows="4" required></textarea>
+        </label>
+        <button type="submit">Send Message</button>
+        <p id="formStatus" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section id="quotes">
+      <h2>Daily Uplift</h2>
+      <div id="quoteBox">
+        <blockquote id="quote">Click "Get Quote" to fetch an uplifting quote.</blockquote>
+        <p id="author"></p>
+        <button id="getQuoteBtn">Get Quote</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Cancer Awareness & Support</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
